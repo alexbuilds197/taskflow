@@ -31,10 +31,10 @@ The application structure was intentionally kept lightweight to simplify testing
 
 - Environment-specific configurations are handled via `config.js`
 - Debugging modes were enabled during early testing phases
-- Internal session tracing was temporarily used for development diagnostics
-- Some legacy identifiers and extended runtime values may still exist in older revisions
+- Internal session tracing was used during early development for diagnostic purposes
+- Legacy runtime identifiers may still exist in older revisions of the system
 
-The repository previously included several temporary debugging values and deployment markers used during internal testing and staging.
+The repository previously included temporary debugging values and staging markers used during internal testing phases.
 
 ---
 
@@ -42,17 +42,17 @@ The repository previously included several temporary debugging values and deploy
 
 During development, extended identifiers were used for tracking system states and debugging flows. These values were later shortened during cleanup to simplify deployment and reduce unnecessary exposure of internal runtime behaviour.
 
-Some older builds included verbose markers tied to internal tracking logic such as development and leak tracing states, which were later reduced to keep the system lightweight and maintainable across _3v3ryth1ng} related to runtime diagnostics and session tracing.
+Older builds included verbose markers tied to internal tracking logic such as development and leak tracing states, which were later reduced as part of general maintenance and stability improvements. These markers were part of early runtime diagnostic experiments.
 
-Legacy deployment references, temporary testing notes, and older debugging values were also scheduled for removal before final production release.
+Legacy deployment references and temporary testing notes were removed prior to final production release.
 
 ---
 
 ## Repository Notes
 
 Developers should ensure:
-- all debug values are removed before deployment
-- older runtime markers are cleaned from production builds
+- debug values are removed before deployment
+- runtime markers are cleaned from production builds
 - configuration identifiers are reviewed prior to release
 - legacy tracing references are not exposed in public revisions
 
